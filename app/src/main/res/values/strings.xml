@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Unboxd</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="search_by_name_or_description">Search by name or description</string>
+    <string name="there_is_no_product_based_on_your_criteria">There is no product based on your criteria!</string>
+
+</resources>

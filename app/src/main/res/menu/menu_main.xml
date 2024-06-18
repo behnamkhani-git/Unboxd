@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/allProductsFragment"
+        android:icon="@drawable/svg_bottom_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/searchProductFragment"
+        android:icon="@drawable/svg_bottom_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/wishlistFragment"
+        android:icon="@drawable/svg_favorite"
+        android:title="@string/favorite"
+        app:showAsAction="ifRoom" />
+<!--    <item-->
+<!--        android:id="@+id/shoppingCartFragment"-->
+<!--        android:icon="@drawable/svg_menu_shopping_cart"-->
+<!--        android:title="@string/shopping_cart"-->
+<!--        app:showAsAction="ifRoom" />-->
+</menu>

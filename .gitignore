@@ -1,0 +1,14 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/common/build/
+/common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/displayproducts/build/
+/displayproducts/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/productdetails/build/
+/productdetails/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/searchproduct/build/
+/searchproduct/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/wishlist/build/
+/wishlist/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/

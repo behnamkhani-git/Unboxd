@@ -1,0 +1,8 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="an_error_occurred">An error occurred. Please try again later.</string>
+    <string name="there_is_no_more_products_please_search_another_keyword">There is no more products. Please search another keyword!</string>
+    <string name="failed_to_search_products">Failed to fetch products!</string>
+
+
+</resources>

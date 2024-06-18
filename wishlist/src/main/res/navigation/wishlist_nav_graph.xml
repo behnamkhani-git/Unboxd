@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wishlist_nav_graph"
+    app:startDestination="@id/wishlistFragment">
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.behnamkhani.unboxd.wishlist.presentation.ui.WishlistFragment"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" >
+        <action
+            android:id="@+id/action_wishlistFragment_to_productDetailsFragment2"
+            app:destination="@id/productDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment2"
+        android:name="com.behnamkhani.unboxd.productdetails.presentation.ui.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" />
+</navigation>

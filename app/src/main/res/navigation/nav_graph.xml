@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/display_products_nav_graph">
+
+    <include app:graph = "@navigation/display_products_nav_graph" />
+    <include app:graph = "@navigation/wishlist_nav_graph" />
+    <include app:graph = "@navigation/search_product_nav_graph" />
+
+
+
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.behnamkhani.unboxd.wishlist.presentation.ui.WishlistFragment"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" >
+        <action
+            android:id="@+id/action_wishlistFragment_to_productDetailsFragment2"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allProductsFragment"
+        android:name="com.behnamkhani.unboxd.displayproduct.presentation.ui.AllProductsFragment"
+        android:label="fragment_all_products"
+        tools:layout="@layout/fragment_all_products" >
+        <action
+            android:id="@+id/action_allProductsFragment_to_productDetailsFragment2"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchProductFragment"
+        android:name="com.behnamkhani.unboxd.searchproduct.presentation.ui.SearchProductFragment"
+        android:label="SearchProductFragment"
+        tools:layout="@layout/fragment_search_product"
+        >
+        <action
+            android:id="@+id/action_searchProductFragment_to_productDetailsFragment2"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.behnamkhani.unboxd.productdetails.presentation.ui.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details" >
+        <argument
+            android:name="productId"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

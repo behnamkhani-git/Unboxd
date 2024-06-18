@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_view_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_card_size"
+    android:layout_margin="@dimen/half_default_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recycler_view_item"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/photo"
+            android:paddingTop="8dp"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/products_height"
+            android:contentDescription="@string/photo_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/empty_basket" />
+
+
+        <CheckBox
+            app:useMaterialThemeColors="false"
+            android:id="@+id/favorite"
+            android:button="@drawable/selector_wishlist_item"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/small_margin"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo"
+            tools:text="Product name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="25.14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

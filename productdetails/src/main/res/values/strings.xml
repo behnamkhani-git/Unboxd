@@ -1,0 +1,7 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="product_details_tools_text">Product details</string>
+    <string name="product_description_tools_text">Product description</string>
+    <string name="_10_reviews">10 Reviews</string>
+</resources>
